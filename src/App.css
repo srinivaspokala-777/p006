@@ -1,6 +1,5 @@
 .app{
     height: 100%;
-    background: linear-gradient(to bottom, #a1cbe6, #fff);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -44,6 +43,9 @@
     border-radius: 10px;
     box-sizing: border-box;
 }
+.app .login-container .input-group .error{
+    border: 1px solid red;
+}
 .app .login-container .forgot-password{
     width: 100%;
     text-align: right;
@@ -65,4 +67,20 @@
 .app .login-container button:hover ,.app .signup-container button:hover{
     background: #333;
     cursor: pointer;
+}
+.app{
+    background: linear-gradient(-45deg, #a1cbe6, #fff, #a1cbe6, #fff);
+    background-size: 400% 400%;
+    animation: gradientMove 15s ease infinite;
+}
+@keyframes gradientMove {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
