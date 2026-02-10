@@ -69,9 +69,9 @@
     cursor: pointer;
 }
 .app{
-    background: linear-gradient(-45deg, #a1cbe6, #fff, #a1cbe6, #fff);
+    background: linear-gradient(-45deg, #315a74,  #fff, #a1cbe6, #a1cbe6);
     background-size: 400% 400%;
-    animation: gradientMove 15s ease infinite;
+    animation: gradientMove 10s ease infinite;
 }
 @keyframes gradientMove {
   0% {

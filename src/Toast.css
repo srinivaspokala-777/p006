@@ -1,0 +1,64 @@
+.toast{
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    list-style: none;
+    z-index: 999;
+}
+.toast li div img{
+    width: 24px;
+}
+.toast li div{
+    background: white;
+    width: 300px;
+    padding: 10px;
+    border-radius: 4px;
+
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.toast li label{
+    position: absolute;
+    top: 0px;
+    right: 10px;
+    font-size: 12pt;
+}
+.toast li label:hover{
+    cursor: pointer;
+    opacity: 0.6;
+}
+.toast li{
+    margin-top: 20px;
+    position: relative;
+    box-shadow: 5px 5px 10px gray;
+    animation: showtoast 0.3s linear forwards;
+}
+.toast li::before{
+    width: 100%;
+    position: absolute;
+    content: "";
+    bottom: 0px;
+    left: 0;
+    height: 3px;
+    background: green;
+    animation: progress 5s linear forwards;
+}
+@keyframes progress {
+    100%{width: 0%;}
+}
+@keyframes showtoast {
+    0%{
+        transform: translateX(100%);
+    }
+    40%{
+        transform: translate(-5%);
+    }
+    80%{
+        transform: translateX(10%);
+    }
+    
+    100%{
+        transform: translateX(-10px);
+    }
+}
