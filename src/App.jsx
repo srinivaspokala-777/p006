@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import './App.css';
 import Toast from './Toast';
-
 const App = () => {
   const IMGURL = import.meta.env.BASE_URL;
   const [tooglePassword, setTooglePassword] = useState("password");

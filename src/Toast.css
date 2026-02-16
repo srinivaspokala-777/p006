@@ -62,3 +62,12 @@
         transform: translateX(-10px);
     }
 }
+.toast .success::before{
+    background-color: green;
+}
+.toast .error ::before{
+    background-color: red;
+}
+.toast .warning::before{
+    background-color: goldenrod;
+}
